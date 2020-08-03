@@ -1,0 +1,19 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /CRM
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: hbstudent
+    url: jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false
+    username: hbstudent
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
